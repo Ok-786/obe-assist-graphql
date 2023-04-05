@@ -1,0 +1,53 @@
+[0329/024113.017:INFO:CONSOLE(2)] "
+
+
+          learnlearnle      arnlearnlearn     
+       learnlearnlearnl   earnlearnlearnlea   
+      rnlearnlearnlear  nlearnlearnlearnlearn 
+     learnlea      r   nlearnle       arnlearn
+     learnle          arnlearn         learnle    Passionate about education? Come work at Coursera!
+     arnlear         nlearnle          arnlear           https://about.coursera.org/careers/
+     nlearnle      arnlearnlear      nlearnlea
+      rnlearnlearnlearnlearnlearnlearnlearnle 
+       arnlearnlearnlearn learnlearnlearnle   
+          arnlearnlear      nlearnlearnle     
+
+
+
+", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024121.412:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0329/024121.412:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0329/024121.426:ERROR:disk_cache.cc(205)] Unable to create cache
+[0329/024121.426:ERROR:gpu_disk_cache.cc(673)] Gpu Cache Creation failed: -2
+[0329/024121.426:ERROR:disk_cache.cc(205)] Unable to create cache
+[0329/024121.426:ERROR:gpu_disk_cache.cc(673)] Gpu Cache Creation failed: -2
+[0329/024121.621:ERROR:cache_util_win.cc(20)] Unable to move the cache: Access is denied. (0x5)
+[0329/024121.621:ERROR:disk_cache.cc(205)] Unable to create cache
+[0329/024124.975:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024124.976:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024125.411:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024135.684:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024135.692:INFO:CONSOLE(2)] "[GSI_LOGGER]: Check credential status returns invalid response.", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024135.694:INFO:CONSOLE(2)] "[Google One Tap]: unknown_reason undefined", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024135.854:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024135.861:INFO:CONSOLE(2)] "[GSI_LOGGER]: Check credential status returns invalid response.", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024135.862:INFO:CONSOLE(2)] "[Google One Tap]: unknown_reason undefined", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024136.086:ERROR:ssl_client_socket_impl.cc(985)] handshake failed; returned -1, SSL error code 1, net_error -100
+[0329/024143.097:INFO:CONSOLE(2)] "
+
+
+          learnlearnle      arnlearnlearn     
+       learnlearnlearnl   earnlearnlearnlea   
+      rnlearnlearnlear  nlearnlearnlearnlearn 
+     learnlea      r   nlearnle       arnlearn
+     learnle          arnlearn         learnle    Passionate about education? Come work at Coursera!
+     arnlear         nlearnle          arnlear           https://about.coursera.org/careers/
+     nlearnle      arnlearnlear      nlearnlea
+      rnlearnlearnlearnlearnlearnlearnlearnle 
+       arnlearnlearnlearn learnlearnlearnle   
+          arnlearnlear      nlearnlearnle     
+
+
+
+", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
+[0329/024157.123:INFO:CONSOLE(2)] "There was an issue loading the googleOneTap plugin. See the following error:", source: https://browser.sentry-cdn.com/7.43.0/bundle.tracing.es5.min.js (2)
