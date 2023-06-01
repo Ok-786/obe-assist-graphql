@@ -97,6 +97,11 @@ function ObeSheet() {
     }
 
 
+    useEffect(()=> {
+        recommendedAnalysisCategory(data['obe'])
+    },[])
+    
+
     function recommendedAnalysisCategory(arr) {
         console.log('pppppppppppppppppppppoooo')
         console.log(arr)
@@ -104,6 +109,7 @@ function ObeSheet() {
         let marksArr = [];
         let courseDescriptionArr = [];
         for (let i = 0; i < arr.length; i++) {
+            console.log('qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq')
             let category = arr[i].category;
             let marks = parseInt(arr[i].marks);
             let courseDescription = arr[i].courseDescription;
@@ -128,7 +134,7 @@ function ObeSheet() {
         for (let category in counts) {
             result.push({ category: category, marks: marksArr[category], courseDescription: courseDescriptionArr[category] });
         }
-        console.log('courseDescriptionArr')
+        console.log('courseDescriptionArr', counts)
         console.log(result)
         getObjectNameWithLeastScore(result)
         getObjectNameWithHighestScore(result)
