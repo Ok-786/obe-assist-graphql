@@ -95,8 +95,8 @@ function Signup() {
 
                 <Button type="submit" variant='contained' color='primary' size='large' sx={{ mt: 8 }}>Sign up</Button>
                 <div className={styles['social']}>
-                    <Button variant='contained' color="error" sx={{ color: 'white', mr: 1 }} ><GoogleIcon style={{ backgroundColor: "red", borderRadius: '50%', padding: '2px' }} /> &nbsp;Google </Button>
-                    <Button variant='contained' color="error" sx={{ color: 'white', ml: 1 }}><FacebookOutlinedIcon style={{ backgroundColor: "#23a2e0", borderRadius: '50%', padding: '2px' }} color={"error"} /> &nbsp;Facebook  </Button>
+                    <Button variant='contained' color="error" sx={{ color: 'white', mr: 1 }} >  </Button>
+                    <Button variant='contained' color="error" sx={{ color: 'white', ml: 1 }}> </Button>
                 </div>
 
                 <div className={styles['signin-label']}>

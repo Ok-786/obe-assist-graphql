@@ -15,9 +15,9 @@ export default function Categories({ setCategory }) {
     const images = [Decoration, Logo, Laptop, Cars, Bike, Shirt, Xbox, Pet]
     const colors = ['#f3851e', '#f3851e', '#f3851e', '#f3851e', '#f3851e', '#f3851e', '#f3851e', '#f3851e', '#f3851e']
 
-    useEffect(() => {
-        setItems(items.sort())
-    }, [])
+    // useEffect(() => {
+    //     setItems(items.sort())
+    // }, [])
 
     const setting = {
         dragSpeed: 1.25,

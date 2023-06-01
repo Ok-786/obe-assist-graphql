@@ -7,7 +7,7 @@ const request = require('request');
 exports.webScrapping = {
     Query: {
         scrapCourses: async (_, args, context) => {
-            const url =  `https://www.coursera.org/search?query=${args.courseType}`;
+            const url = `https://www.coursera.org/search?query=${args.courseType}`;
             console.log(url)
             // const id = context.userId;
             // console.log("aa", id)
@@ -18,9 +18,9 @@ exports.webScrapping = {
                 console.log('args')
                 console.log(args)
                 const browser = await puppeteer.launch({
-                    // userDataDir: './temp',
+                    userDataDir: './temp',
                     defaultViewport: false,
-                    // headless:false
+                    headless: false
                 });
 
                 const page = await browser.newPage();
@@ -34,59 +34,59 @@ exports.webScrapping = {
                         throw err;
                     }
                 }
-                
+
                 const coursesHandles = await page.$$('.cds-71.css-18msmec.cds-72 > .cds-71.css-0.cds-73.cds-grid-item.cds-118.cds-126.cds-138');
                 // console.log('cds-71 css-18msmec cds-72')
                 const scrappedCourses = [];
                 var title, rating, author, image, description, link = ''
                 for (const coursehandle of coursesHandles) {
-                    try{
-                    title = await page.evaluate(
-                        el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > h2").textContent,
-                        coursehandle
-                    );
-                    }
-                    catch(err) {}
-
                     try {
-                    rating = await page.evaluate(
-                        el => el.querySelector("div > p.cds-33.css-zl0kzj.cds-35").textContent,
-                        coursehandle
-                    );
+                        title = await page.evaluate(
+                            el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > h2").textContent,
+                            coursehandle
+                        );
                     }
                     catch (err) { }
 
                     try {
-                    author = await page.evaluate(
-                        el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > div > div > div.cds-71.css-1xdhyk6.cds-73.cds-grid-item > span").textContent,
-                        coursehandle
-                    );
+                        rating = await page.evaluate(
+                            el => el.querySelector("div > p.cds-33.css-zl0kzj.cds-35").textContent,
+                            coursehandle
+                        );
                     }
-                    catch(err) {}
+                    catch (err) { }
 
                     try {
-                    description = await page.evaluate(
-                        el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > p").textContent,
-                        coursehandle
-                    );
+                        author = await page.evaluate(
+                            el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > div > div > div.cds-71.css-1xdhyk6.cds-73.cds-grid-item > span").textContent,
+                            coursehandle
+                        );
                     }
-                    catch(err) {}
+                    catch (err) { }
 
                     try {
-                    image = await page.evaluate(
-                        (el) => el.querySelector('div > div > a > div > div.css-1doy6bd > img')?.getAttribute('src'),
-                        coursehandle
-                    );
+                        description = await page.evaluate(
+                            el => el.querySelector("div > div > a > div > div.css-ilhc4l > div.css-1rj417c > p").textContent,
+                            coursehandle
+                        );
                     }
-                    catch(err) {}
+                    catch (err) { }
 
                     try {
-                    link = await page.evaluate(
-                        (el) => el.querySelector('div > div > a')?.getAttribute('href'),
-                        coursehandle
-                    );
+                        image = await page.evaluate(
+                            (el) => el.querySelector('div > div > a > div > div.css-1doy6bd > img')?.getAttribute('src'),
+                            coursehandle
+                        );
                     }
-                    catch(err) {}
+                    catch (err) { }
+
+                    try {
+                        link = await page.evaluate(
+                            (el) => el.querySelector('div > div > a')?.getAttribute('href'),
+                            coursehandle
+                        );
+                    }
+                    catch (err) { }
 
 
 

@@ -103,10 +103,10 @@ const CourseCard = React.memo(({ course, refetchCourses, type }) => {
                                         textAlign: 'center',
                                     }}
                                 >
-                                    {
+                                    {/* {
                                         fav ? <StarIcon fontSize='large' onClick={() => handleFav(false)} /> :
                                             <StarBorderIcon fontSize='large' onClick={() => handleFav(true)} />
-                                    }
+                                    } */}
                                 </Box>
                             </div> :
                             <>
@@ -142,10 +142,10 @@ const CourseCard = React.memo(({ course, refetchCourses, type }) => {
                                         textAlign: 'center',
                                     }}
                                 >
-                                    {
+                                    {/* {
                                         fav ? <StarIcon fontSize='large' onClick={() => handleFav(false)} /> :
                                             <StarBorderIcon fontSize='large' onClick={() => handleFav(true)} />
-                                    }
+                                    } */}
                                 </Box>
                             </>
                         }
@@ -243,10 +243,10 @@ const CourseCard = React.memo(({ course, refetchCourses, type }) => {
                                     textAlign: 'center',
                                 }}
                             >
-                                {
+                                {/* {
                                     fav ? <StarIcon fontSize='large' onClick={() => handleFav(false)} /> :
                                         <StarBorderIcon fontSize='large' onClick={() => handleFav(true)} />
-                                }
+                                } */}
                             </Box>
                         </div> :
                         <>
@@ -282,10 +282,10 @@ const CourseCard = React.memo(({ course, refetchCourses, type }) => {
                                     textAlign: 'center',
                                 }}
                             >
-                                {
+                                {/* {
                                     fav ? <StarIcon fontSize='large' onClick={() => handleFav(false)} /> :
                                         <StarBorderIcon fontSize='large' onClick={() => handleFav(true)} />
-                                }
+                                } */}
                             </Box>
                         </>
                     }

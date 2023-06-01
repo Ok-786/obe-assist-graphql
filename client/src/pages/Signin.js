@@ -47,12 +47,14 @@ function Signin() {
                 data: {
                     credentials: {
                         token: data.login.token,
-                        user: {...data.login.user, role: data.login.role},
+                        user: { ...data.login.user, role: data.login.role },
                         __typename: 'Credentials',
                     },
                 },
             });
             console.log(data.login)
+            data.login.role == 'resource_person' && window.location.replace('http://127.0.0.1:8000/');
+            if (data.login.role == 'resource_person') return;
             localStorage.setItem('auth_token', JSON.stringify(data.login.token));
             localStorage.setItem('user', JSON.stringify({ ...data.login.user, role: data.login.role }));
 
@@ -95,8 +97,8 @@ function Signin() {
 
                 <Button type='submit' variant='contained' color='primary' size='large' sx={{ mt: 8 }}>Log In</Button>
                 <div className={styles['social']}>
-                    <Button variant='contained' color="error" sx={{ color: 'white', mr: 1 }} ><GoogleIcon style={{ backgroundColor: "red", borderRadius: '50%', padding: '2px' }} /> &nbsp;Google </Button>
-                    <Button variant='contained' color="error" sx={{ color: 'white', ml: 1 }}><FacebookOutlinedIcon style={{ backgroundColor: "#23a2e0", borderRadius: '50%', padding: '2px' }} color={"error"} /> &nbsp;Facebook  </Button>
+                    <Button variant='contained' color="error" sx={{ color: 'white', mr: 1 }} > </Button>
+                    <Button variant='contained' color="error" sx={{ color: 'white', ml: 1 }}></Button>
                 </div>
 
                 <div className={styles['signin-label']}>

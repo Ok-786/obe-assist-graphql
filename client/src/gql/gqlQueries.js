@@ -97,6 +97,7 @@ export const filterObeCourse = gql`
             assesmentActivityId
             type
             assessmentId
+            assessmentType
             courseId
             resourcePersonId
             courseTitle

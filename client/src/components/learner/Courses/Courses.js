@@ -26,7 +26,7 @@ export default function Courses({ refetchCourses, title, search, category, loadi
                         <h1>{title}</h1>
                     </div>
                     <div style={{ float: 'right', marginTop: '2vh' }}>
-                        <FilterDropDown setDistance={''} />
+                        {/* <FilterDropDown setDistance={''} /> */}
                     </div>
                 </div>
                 <div className={styles['scrollbar']}>

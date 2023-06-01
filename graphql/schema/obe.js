@@ -4,6 +4,7 @@ exports.obeTypeDefs = () => `
             assesmentAttemptId: String
             learnerId: String
             assesmentActivityId: String
+            assessmentType: String
             type: String
             assessmentId: String
             courseId: String

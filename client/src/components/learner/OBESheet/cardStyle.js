@@ -129,7 +129,7 @@ export default function Card(props) {
                         className={classes.persentage}
                         justifyContent="flex-end"
                     >
-                        <Typography variant="h6"> Total Programmes: {props.data.length}</Typography>
+                        <Typography variant="h6"> Total Courses: {props.data.length}</Typography>
                     </Grid>
                 </Grid>
                 <Grid container>
@@ -187,7 +187,7 @@ export default function Card(props) {
 
                 <Grid container xs justify="flex-start" className={classes.title}>
                     <Typography>
-                        Student Id: <spam style={{ fontWeight: 'bold' }}>{props.data2 &&  props.data2.obe[0].learnerId}</spam>
+                        Student Id: <spam style={{ fontWeight: 'bold' }}>{props.data2 && props.data2.obe[0].learnerId}</spam>
                     </Typography>
                 </Grid>
 

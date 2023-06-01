@@ -165,14 +165,14 @@ function ObeSheet() {
 
 
     console.log("llllllllllllllllllllll")
-    console.log(recommendedAnalysisCategory(obeData))
+    console.log(filterObeData)
 
     return (
 
         <>
             <Navbar />
             {
-                obeData ?
+                obeData.length > 0 ?
                     <div>
                         {console.log("data", data, loading, error)}
 
@@ -267,6 +267,7 @@ function ObeSheet() {
                                             <TableRow >
                                                 <TableCell width={"30%"} style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Activity Type</TableCell>
                                                 <TableCell align="right" style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Course Title</TableCell>
+                                                <TableCell align="right" style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Assesment Type</TableCell>
                                                 <TableCell align="right" style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Managed By</TableCell>
                                                 <TableCell align="right" style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Marks</TableCell>
                                                 <TableCell align="right" style={{ fontWeight: 'bold', background: '#f5f5f5', height: '35px' }}>Weightage</TableCell>
@@ -285,6 +286,7 @@ function ObeSheet() {
                                                         {row.type}
                                                     </TableCell>
                                                     <TableCell align="right">{row.courseTitle}</TableCell>
+                                                    <TableCell align="right">{row.assessmentType}</TableCell>
                                                     <TableCell align="right">{row.email}</TableCell>
                                                     <TableCell align="right"> 0{row.marks} </TableCell>
                                                     <TableCell align="right">{row.weightage}</TableCell>
